@@ -42,7 +42,7 @@ class TestSequenceFunctions(unittest.TestCase):
         self.block_header = unhexlify(header_hex)
         self.best_hash = best_hash
 
-    def test_dash_hash(self):
+    def test_race_hash(self):
         self.pow_hash = hexlify(race_hash.getPoWHash(self.block_header))
         self.assertEqual(self.pow_hash.decode(), self.best_hash)
 
