@@ -39,7 +39,7 @@ static PyMethodDef RaceMethods[] = {
 #if PY_MAJOR_VERSION >= 3
 static struct PyModuleDef RaceModule = {
     PyModuleDef_HEAD_INIT,
-    "race_hash",
+    "lyra2re2_hash",
     "...",
     -1,
     RaceMethods
@@ -52,6 +52,6 @@ PyMODINIT_FUNC PyInit_race_hash(void) {
 #else
 
 PyMODINIT_FUNC initrace_hash(void) {
-    (void) Py_InitModule("race_hash", RaceMethods);
+    (void) Py_InitModule("lyra2re2_hash", RaceMethods);
 }
 #endif
