@@ -12,7 +12,7 @@ race_hash_module = Extension('race_hash',
                                             'sha3/cubehash.c'],
                                include_dirs=['.', './sha3'])
 
-setup (name = 'lyra2re2_hash',
+setup (name = 'race_hash',
        version = '1.0.0',
        description = 'Binding for Race proof-of-work hashing.',
        ext_modules = [race_hash_module])
