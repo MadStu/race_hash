@@ -1,4 +1,4 @@
-import lyra2re2_hash
+import race_hash
 from binascii import unhexlify, hexlify
 
 import unittest

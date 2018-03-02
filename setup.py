@@ -1,6 +1,6 @@
 from distutils.core import setup, Extension
 
-race_hash_module = Extension('race_hash',
+race_hash_module = Extension('lyra2re2_hash',
                                  sources = ['racemodule.c',
                                             'Lyra2RE.c',
                                             'sha3/blake.c',
@@ -11,7 +11,7 @@ race_hash_module = Extension('race_hash',
                                             'sha3/cubehash.c'],
                                include_dirs=['.', './sha3'])
 
-setup (name = 'race_hash',
+setup (name = 'lyra2re2_hash',
        version = '1.0.0',
        description = 'Binding for Race proof-of-work hashing.',
        ext_modules = [race_hash_module])
