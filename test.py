@@ -29,7 +29,7 @@ import unittest
 
 header_hex = ("02000000" +
     "dd04f4e5c0b9b2ceaeef8c3cfca2fcf7f62a60f10f85e1eb4f3f84c7dd0a0000" +
-    "c6a2944ede153447d40eac2caebfac41719b95e0ca13df794f7636bb7af79285"
+    "c6a2944ede153447d40eac2caebfac41719b95e0ca13df794f7636bb7af79285" + 
     "dfb4725a" +
     "f0ff0f1e" +
     "bf1e0100")
