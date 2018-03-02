@@ -22,8 +22,8 @@ typedef unsigned char byte;
 extern "C" {
 #endif
 
-void lyra2re_hash(const char* input, char* output);
-void lyra2re2_hash(const char* input, char* output);
+void race_hash(const char* input, char* output);
+int LYRA2(void *K, uint64_t kLen, const void *pwd, uint64_t pwdlen, const void *salt, uint64_t saltlen, uint64_t timeCost, uint64_t nRows, uint64_t nCols);
 
 #ifdef __cplusplus
 }
