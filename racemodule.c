@@ -1,6 +1,6 @@
 #include <Python.h>
 
-#include "race.h"
+#include "Lyra2RE.h"
 
 static PyObject *race_getpowhash(PyObject *self, PyObject *args)
 {
@@ -17,9 +17,9 @@ static PyObject *race_getpowhash(PyObject *self, PyObject *args)
     output = PyMem_Malloc(32);
 
 #if PY_MAJOR_VERSION >= 3
-    race_hash((char *)PyBytes_AsString((PyObject*) input), (int)PyBytes_Size((PyObject*) input), output);
+    race_hash((char *)PyBytes_AsString((PyObject*) input), output);
 #else
-    race_hash((char *)PyString_AsString((PyObject*) input), (int)PyString_Size((PyObject*) input), output);
+    race_hash((char *)PyString_AsString((PyObject*) input), output);
 #endif
     Py_DECREF(input);
 #if PY_MAJOR_VERSION >= 3

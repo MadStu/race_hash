@@ -2,7 +2,7 @@ from distutils.core import setup, Extension
 
 race_hash_module = Extension('race_hash',
                                  sources = ['racemodule.c',
-                                            'race.c',
+                                            'Lyra2RE.c',
                                             'sha3/blake.c',
                                             'sha3/bmw.c',
                                             'sha3/groestl.c',
