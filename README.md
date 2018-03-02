@@ -1,6 +1,21 @@
 race_hash (python) v1.0.0
 ===========================
+<p align="center">
+<a href="https://travis-ci.org/racecrypto/race_hash" alt="Build Status">
+<img src="https://travis-ci.org/racecrypto/race_hash.svg?branch=master"/>
+</a>
+<a href="https://discord.racecrypto.com" alt="Discord">
+<img src="https://img.shields.io/discord/402827967111233546.svg"/>
+  </a>
+<a href="https://twitter.racecrypto.com" alt="Twitter">
+<img src="https://img.shields.io/twitter/follow/race_crypto.svg?style=social&label=Follow"/>
+</a>
+</p>
+<p align="center">
+  <a href="https://www.racecrypto.com">https://www.racecrypto.com</a> | <a href="https://explorer.racecrypto.com">Block Explorer</a> | <a href="https://ann.racecrypto.com">Announcement</a> | <a href="https://discord.racecrypto.com">Discord</a> | <a href="https://twitter.racecrypto.com">Twitter</a>
+</p>
 
+## About 
 Python module for Lyra2REv2 PoW hashing algorithm of Race.
 
 
