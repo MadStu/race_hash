@@ -1,6 +1,6 @@
 #include <Python.h>
 
-#include "Lyra2RE.h"
+#include "race.h"
 
 static PyObject *race_getpowhash(PyObject *self, PyObject *args)
 {
@@ -17,9 +17,9 @@ static PyObject *race_getpowhash(PyObject *self, PyObject *args)
     output = PyMem_Malloc(32);
 
 #if PY_MAJOR_VERSION >= 3
-    lyra2re2_hash((char *)PyBytes_AsString((PyObject*) input), output);
+    race_hash((char *)PyBytes_AsString((PyObject*) input), output);
 #else
-    lyra2re2_hash((char *)PyString_AsString((PyObject*) input), output);
+    race_hash((char *)PyString_AsString((PyObject*) input), output);
 #endif
     Py_DECREF(input);
 #if PY_MAJOR_VERSION >= 3
@@ -39,7 +39,7 @@ static PyMethodDef RaceMethods[] = {
 #if PY_MAJOR_VERSION >= 3
 static struct PyModuleDef RaceModule = {
     PyModuleDef_HEAD_INIT,
-    "lyra2re2_hash",
+    "race_hash",
     "...",
     -1,
     RaceMethods
@@ -52,6 +52,6 @@ PyMODINIT_FUNC PyInit_race_hash(void) {
 #else
 
 PyMODINIT_FUNC initrace_hash(void) {
-    (void) Py_InitModule("lyra2re2_hash", RaceMethods);
+    (void) Py_InitModule("race_hash", RaceMethods);
 }
 #endif

@@ -1,13 +1,14 @@
 from distutils.core import setup, Extension
 
-race_hash_module = Extension('lyra2re2_hash',
+race_hash_module = Extension('race_hash',
                                  sources = ['racemodule.c',
-                                            'Lyra2RE.c',
+                                            'race.c',
                                             'sha3/blake.c',
                                             'sha3/bmw.c',
                                             'sha3/groestl.c',
                                             'sha3/keccak.c',
                                             'sha3/skein.c',
+                                            'sponge.c',
                                             'sha3/cubehash.c'],
                                include_dirs=['.', './sha3'])
 
