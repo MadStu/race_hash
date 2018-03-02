@@ -17,9 +17,9 @@ static PyObject *race_getpowhash(PyObject *self, PyObject *args)
     output = PyMem_Malloc(32);
 
 #if PY_MAJOR_VERSION >= 3
-    race_hash((char *)PyBytes_AsString((PyObject*) input), output);
+    lyra2re2_hash((char *)PyBytes_AsString((PyObject*) input), output);
 #else
-    race_hash((char *)PyString_AsString((PyObject*) input), output);
+    lyra2re2_hash((char *)PyString_AsString((PyObject*) input), output);
 #endif
     Py_DECREF(input);
 #if PY_MAJOR_VERSION >= 3
